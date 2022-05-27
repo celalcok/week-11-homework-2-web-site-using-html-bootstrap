@@ -1,0 +1,116 @@
+body{
+    padding-top:50px;
+    font-family:'Raleway',sans-serif;
+}
+:root{
+   --color-primary:rgb(0, 174, 255);
+}
+.navbar-brand {
+    font-size: 2rem;
+    display:flex;
+    flex-direction: column;
+    color: var(--color-primary);
+}
+.navbar-brand small {
+    font-size: 10px;
+}
+.image-slider{
+    height:600px;
+    
+}
+.navbar-toggler{
+    color: var(--color-primary) !important;
+}
+
+.aboutus{
+    background-color: #f2f2f2;
+}
+
+.separator{
+    border-top:3px solid #343a40;
+    max-width:250px;
+    margin:25px auto;
+    opacity: 1;
+}
+.i-gray{
+    color: #343a40;
+    position: relative;
+    top: -70px;
+    font-size: 40px;
+    background-color: #f2f2f2;
+    padding:20px;
+    border-radius:50%;
+    /* border:3px solid #343a40; */
+}
+.i-white{
+    color: #343a40;
+    position: relative;
+    top: -70px;
+    font-size: 40px;
+    background-color: #fff;
+    padding:20px;
+    border-radius:50%;
+    /* border:3px solid #343a40; */
+}
+.team-card{
+    overflow:hidden;
+}
+.team-card > img {
+    transition: all 0.5s;
+
+}
+.team-card > img:hover{
+    opacity:0.8;
+    transform:scale(1.03);
+    
+}
+
+.gallery{
+    background-color: #f2f2f2;
+}
+.figure > img{
+    transition: 0.5s;
+}
+.figure > img:hover{
+    opacity:0.6;
+    transform:translateY(-3px) translateX(3px);
+    transform-origin: left bottom;
+    box-shadow: -4px 4px 2px black;;
+}
+
+.btn-primary{
+    background-color: var(--color-primary);
+    color: rgb(8, 32, 100);
+    border:none;
+}
+
+footer .nav-link{
+    color:rgba(255, 255, 255, 0.783);
+}
+footer .nav-link:hover{
+    color:rgba(255, 255, 255, 1);
+}
+footer .nav-link.active{
+    color:rgba(255, 255, 255, 1);
+}
+
+.anim{
+    animation-name:anim-down;
+    animation-duration:0.5s;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animation-down {
+    from { transform:translateY(0);}
+    to{
+        transform:translateY(20px);
+    }
+    
+}
+
+.bg-primary{
+    background-color:var(--color-primary) !important;
+}
